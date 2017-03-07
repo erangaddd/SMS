@@ -1,0 +1,93 @@
+#screensaver {
+    width: 100%;
+	z-index:999;
+	background-color:#FFF;
+}
+#screen_overlay {
+		width:100%;
+		z-index:999;
+		position:fixed;
+	}
+	
+	#screen_content {
+		font-size:18px;
+		border-top:5px #ffba53 solid;
+		border-bottom:1px #888888 solid;
+		font-weight:bold;
+		padding:10px 30px;
+		opacity:0.9;
+		filter:alpha(opacity=90);
+		-moz-opacity:0.9;
+		-khtml-opacity: 0.9;
+		background-color:#ffffff;
+		color:#003593;
+		margin-top:0px;
+		height:40px;
+		/* Display on top of slideshow */
+		z-index:999;	
+		position:relative; /* This is very important! */	
+	}
+	#screen_content span{ top:15px; position:absolute;  font-size:24px; background-color:#FFF;}
+	img#bg {
+		/* Stretch background */
+		position:fixed;
+		top:0;
+		left:0;
+		height:100%;
+		background-color:#FFF;
+		width:100%;
+		z-index:998;
+	}
+	
+	#bg_grid {
+		position:fixed; /* This is very important! */
+		top:0;
+		left:0;
+		height:100%;
+		width:100%;
+	    background: url(../../media/images/grid.png) repeat;
+			
+		/* Display on top of background */
+		z-index:998;
+	}
+
+	#image_description {
+		position:fixed; /* This is very important! */
+		left:-270px;
+		bottom:100px;
+		width:250px;
+		text-align:justify;
+		background-color:#ffffff;
+		filter:alpha(opacity=90);
+		-moz-opacity:0.9;
+		-khtml-opacity: 0.9;
+		opacity: 0.9;
+		z-index:999;
+		padding:10px;
+		font-size:12px;
+		line-height:12px;
+		color:#003593;
+		}
+	#imgf{ padding-right:30px;}
+	#page_content small{ font-style:italic; font-size:10px; color:#ffba53; font-weight:normal;}
+	#screen_content span small{ padding-top:0px; width:400px; font-variant:normal; font-size:12px; position:absolute;}
+	
+	#footerscr{
+	position:fixed;
+	bottom:0px;
+	width:100%;
+	text-align:right;
+	padding-top:10px;
+	padding-bottom:5px;
+	font-size:11px;
+	color:#fff;
+	filter:alpha(opacity=60);
+	-moz-opacity:0.6;
+	-khtml-opacity: 0.6;
+	opacity: 0.6;
+	background-color:#000;
+	z-index:999;
+	font-family:Arial, Helvetica, sans-serif;
+	}
+	#footerscr span{ text-align:left; position:absolute; left:20px; z-index:999;}
+	#footerscr a{ text-decoration:none; color:#FFF; z-index:999;}
